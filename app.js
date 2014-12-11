@@ -60,6 +60,8 @@ app.use('/users', users);
 
 require('./user/auth.js')(app, mongoose, UserDetails);
 require('./user/pass.js')(app, mongoose, UserDetails);
+require('./reservation/create.js')(app, mongoose, ReservationDetails);
+require('./reservation/display.js')(app, mongoose, ReservationDetails);
 
 
 // catch 404 and forward to error handler
